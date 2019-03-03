@@ -1,0 +1,17 @@
+Compilation and object creation of component files:
+g++ -c mysin.cpp mytan.cpp mycos.cpp
+
+Library Creation:
+ar crv libmytrig.a mysin.o mycos.o mytan.o
+
+Table of Contents Creation:
+ranlib libmytrig.a
+
+Test Program Compilation:
+g++ -c trigtest.cpp
+
+Program Executable Creation:
+g++ -o trigtest trigtest.o libmytrig.a
+
+Program Execution:
+./trigtest

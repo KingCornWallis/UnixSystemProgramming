@@ -1,0 +1,154 @@
+
+I calculated: 
+sin of 0.000000˚ is 0.000000 
+ cos of 0.000000˚ is 1.000000 
+ tan of 0.000000˚ is 0.000000 
+It calculated: 
+sin of 0.000000˚ is 0.000000 
+ cos of 0.000000˚ is 1.000000 
+ tan of 0.000000˚ is 0.000000 
+I calculated: 
+sin of 10.000000˚ is 0.173745 
+ cos of 10.000000˚ is 0.984596 
+ tan of 10.000000˚ is 0.176464 
+It calculated: 
+sin of 10.000000˚ is 0.173648 
+ cos of 10.000000˚ is 0.984808 
+ tan of 10.000000˚ is 0.176327 
+I calculated: 
+sin of 20.000000˚ is 0.342102 
+ cos of 20.000000˚ is 0.939137 
+ tan of 20.000000˚ is 0.364273 
+It calculated: 
+sin of 20.000000˚ is 0.342020 
+ cos of 20.000000˚ is 0.939693 
+ tan of 20.000000˚ is 0.363970 
+I calculated: 
+sin of 30.000000˚ is 0.500256 
+ cos of 30.000000˚ is 0.864970 
+ tan of 30.000000˚ is 0.578351 
+It calculated: 
+sin of 30.000000˚ is 0.500000 
+ cos of 30.000000˚ is 0.866025 
+ tan of 30.000000˚ is 0.577350 
+I calculated: 
+sin of 40.000000˚ is 0.643325 
+ cos of 40.000000˚ is 0.764320 
+ tan of 40.000000˚ is 0.841697 
+It calculated: 
+sin of 40.000000˚ is 0.642788 
+ cos of 40.000000˚ is 0.766044 
+ tan of 40.000000˚ is 0.839100 
+I calculated: 
+sin of 50.000000˚ is 0.766926 
+ cos of 50.000000˚ is 0.640220 
+ tan of 50.000000˚ is 1.197912 
+It calculated: 
+sin of 50.000000˚ is 0.766044 
+ cos of 50.000000˚ is 0.642788 
+ tan of 50.000000˚ is 1.191754 
+I calculated: 
+sin of 60.000000˚ is 0.866157 
+ cos of 60.000000˚ is 0.496428 
+ tan of 60.000000˚ is 1.744778 
+It calculated: 
+sin of 60.000000˚ is 0.866025 
+ cos of 60.000000˚ is 0.500000 
+ tan of 60.000000˚ is 1.732051 
+I calculated: 
+sin of 70.000000˚ is 0.939835 
+ cos of 70.000000˚ is 0.341500 
+ tan of 70.000000˚ is 2.752080 
+It calculated: 
+sin of 70.000000˚ is 0.939693 
+ cos of 70.000000˚ is 0.342020 
+ tan of 70.000000˚ is 2.747477 
+I calculated: 
+sin of 80.000000˚ is 0.984916 
+ cos of 80.000000˚ is 0.172994 
+ tan of 80.000000˚ is 5.693342 
+It calculated: 
+sin of 80.000000˚ is 0.984808 
+ cos of 80.000000˚ is 0.173648 
+ tan of 80.000000˚ is 5.671282 
+I calculated: 
+sin of 90.000000˚ is 1.000000 
+ cos of 90.000000˚ is -0.000788 
+ tan of 90.000000˚ is -1268.753912 
+It calculated: 
+sin of 90.000000˚ is 1.000000 
+ cos of 90.000000˚ is 0.000000 
+ tan of 90.000000˚ is 16331239353195370.000000 
+I calculated: 
+sin of 100.000000˚ is 0.984596 
+ cos of 100.000000˚ is -0.174561 
+ tan of 100.000000˚ is -5.640408 
+It calculated: 
+sin of 100.000000˚ is 0.984808 
+ cos of 100.000000˚ is -0.173648 
+ tan of 100.000000˚ is -5.671282 
+I calculated: 
+sin of 110.000000˚ is 0.939137 
+ cos of 110.000000˚ is -0.343036 
+ tan of 110.000000˚ is -2.737720 
+It calculated: 
+sin of 110.000000˚ is 0.939693 
+ cos of 110.000000˚ is -0.342020 
+ tan of 110.000000˚ is -2.747477 
+I calculated: 
+sin of 120.000000˚ is 0.864970 
+ cos of 120.000000˚ is -0.501084 
+ tan of 120.000000˚ is -1.726199 
+It calculated: 
+sin of 120.000000˚ is 0.866025 
+ cos of 120.000000˚ is -0.500000 
+ tan of 120.000000˚ is -1.732051 
+I calculated: 
+sin of 130.000000˚ is 0.764320 
+ cos of 130.000000˚ is -0.643890 
+ tan of 130.000000˚ is -1.187035 
+It calculated: 
+sin of 130.000000˚ is 0.766044 
+ cos of 130.000000˚ is -0.642788 
+ tan of 130.000000˚ is -1.191754 
+I calculated: 
+sin of 140.000000˚ is 0.640220 
+ cos of 140.000000˚ is -0.767101 
+ tan of 140.000000˚ is -0.834596 
+It calculated: 
+sin of 140.000000˚ is 0.642788 
+ cos of 140.000000˚ is -0.766044 
+ tan of 140.000000˚ is -0.839100 
+I calculated: 
+sin of 150.000000˚ is 0.496428 
+ cos of 150.000000˚ is -0.866959 
+ tan of 150.000000˚ is -0.572609 
+It calculated: 
+sin of 150.000000˚ is 0.500000 
+ cos of 150.000000˚ is -0.866025 
+ tan of 150.000000˚ is -0.577350 
+I calculated: 
+sin of 160.000000˚ is 0.341500 
+ cos of 160.000000˚ is -0.940413 
+ tan of 160.000000˚ is -0.363138 
+It calculated: 
+sin of 160.000000˚ is 0.342020 
+ cos of 160.000000˚ is -0.939693 
+ tan of 160.000000˚ is -0.363970 
+I calculated: 
+sin of 170.000000˚ is 0.172994 
+ cos of 170.000000˚ is -0.985218 
+ tan of 170.000000˚ is -0.175590 
+It calculated: 
+sin of 170.000000˚ is 0.173648 
+ cos of 170.000000˚ is -0.984808 
+ tan of 170.000000˚ is -0.176327 
+I calculated: 
+sin of 180.000000˚ is -0.000788 
+ cos of 180.000000˚ is -0.999996 
+ tan of 180.000000˚ is 0.000788 
+It calculated: 
+sin of 180.000000˚ is 0.000000 
+ cos of 180.000000˚ is -1.000000 
+ tan of 180.000000˚ is -0.000000 
+
