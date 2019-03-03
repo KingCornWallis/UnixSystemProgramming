@@ -1,0 +1,22 @@
+Jacob Darabaris
+
+1. grep a <filename>
+2. grep -P '^[^a]*/[^a]*$' <filename>
+3. grep a <filename> | grep e | grep i | grep o | grep u
+4. grep  -E ".*a.*e.*i.*o.*u.*" <filename>
+5. grep '^[^a]*a[^a]*$' <filename> | grep '^[^e]*e[^e]*$' | grep '^[^i]*i[^i]*$' | grep '^[^o]*o[^o]*$' | grep '^[^u]*u[^u]*$'
+6. grep '^[^aeiou]*a[^aeiou]*e[^aeiou]*i[^aeiou]*o[^aeiou]*u' <filename>
+7. find . -name '*.o'
+8. find . -size +50k
+9a. Entire System: 	find / \( -name "*.o" \) -size +50k 
+9b. Admin: 			find /root \( -name "*.o" \) -size +50k
+9c. Single User: 	find /home/<username> \( -name "*.o" \) -size +50k
+10a. Entire System: 	find / \( -name "*.o" \) -size +50k -mtime +7 -delete
+10b. Admin: 			find /root \( -name "*.o" \) -size +50k -mtime +7 -delete
+10c. Single User: 		find /home/<username> \( -name "*.o" \) -size +50k -mtime +7 -delete
+
+Notes:
+
+In the instance of #10, probably will only want to use for single user, else risk damaging system files
+
+grep -P does not work on macOS versions 10.8 and above
