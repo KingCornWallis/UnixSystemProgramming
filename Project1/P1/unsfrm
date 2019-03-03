@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#This statement checks if arugments are given, and provides a description if not; otherwise the programs runs
+if [ $# -lt 1 ]; then
+	echo "unsfrm is a script that restores files to the current working directory"
+else
+	#stores the last argument in a variable
+	_last=${@: -1}
+	#checks if the last argument is a directory; if T it becomes the target directory, otherwise it will be the current
+	if [[ -d $_last ]]; then
+		
+		_dir=$(dirname $_last)/$_last
+	else
+		_dir=$PWD
+		
+	fi
+	#This loop runs as long as there are arguments
+	while [ "$1" != "" ]; do
+		#if the target file exists in the trash and is regular
+                if [ -f $HOME/.trash/$(basename $1) ]; then
+			file="$1"
+			flag=0
+			#if the target file already exists in the restore directory, the user must either overwrite it or skip it
+			if [ -f "$_dir"/"$file" ]; then
+                        	while [ -f "$_dir"/"$file" ]; do
+                                	echo "Cannot move $1; $1 already exists in $_dir"
+                                	echo "Enter 'y' to overwrite, or enter any key to skip"
+                                	read file
+                        	done
+				flag=1
+			fi
+			#If the user chose to overwrite the existing file, or if it is a normal case, the file is moved
+			if [ "$file" == "y" ] || (( flag == 0 )) ; then
+				newFile=$(basename $1)
+				mv $HOME/.trash/$(basename $1) $_dir/$newFile
+				shift
+			else
+				shift
+			fi
+		#If the target file does not exist in the trash, or a non-regular file is specified
+		else
+			echo "$1 is not a regular file (or does not exist) and has been ignored"
+			shift
+                fi
+	done
+fi

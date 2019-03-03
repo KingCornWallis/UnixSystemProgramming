@@ -1,0 +1,116 @@
+Test Plan:
+
+sfrm:
+
+Run with no arguments:
+
+BASH$ ./sfrm 
+This is a description of the program
+BASH$
+#current directory contains file1, file2, file3, file4, file5, & dir
+#trash is empty
+
+Run with a single argument (a file):
+
+BASH$ ./sfrm file1
+BASH$
+#current directory contains file2, file3, file4, file5, & dir
+#trash directory now contains file1
+
+Run with two arguments (2 files):
+
+BASH$ ./sfrm file2 file3
+BASH$
+#current directory now contains file4, file5, & dir
+#trash directory now contains file1, file2, & file3
+
+Run with three arguments (2 files and 1 directory):
+
+BASH$ ./sfrm file4 dir file5
+Error message regarding dir
+BASH$ 
+#current directory now contains dir
+#trash directory now contains file1, file2, file3, file4, & file5
+
+Run with two arguments (1 file, of which is a duplicate, and 1 directory)
+
+#current directory now contains file4
+BASH$ ./sfrm file4 dir
+File already exists, please rename
+$ file5
+File already exists, please rename
+$ file6
+Error message regarding dir
+$BASH
+#current directory now contains dir
+#trash directory now contains file1, file2, file3, file4, file5, & file6
+
+unsfrm:
+
+Run with no arguments:
+
+BASH$ ./unsfrm 
+This is a description of the program
+BASH$
+#current directory now contains dir
+#trash directory now contains file1, file2, file3, file4, file5, & file6
+
+Run with a single argument (a file):
+
+BASH$ ./unsfrm file1
+BASH$
+#current directory contains file1 & dir
+#trash directory now contains file2, file3, file4, file5, & file6
+
+Run with two arguments (2 files):
+
+BASH$ ./unsfrm file2 file3
+BASH$
+#current directory now contains file1, file2, file3, & dir
+#trash directory now contains file4, file5, & file6
+
+Run with two arguments (2 files and 1 directory, in the wrong spot):
+
+BASH$ ./unsfrm dir file4
+Error message regarding dir
+BASH$ 
+#current directory now contains file1, file2, file3, file4, & dir
+#trash directory now contains file5, & file6
+#dir directory is empty
+
+Run with two arguments (2 files and 1 directory, in the right spot):
+
+BASH$ ./unsfrm file5 dir
+BASH$ 
+#current directory now contains file1, file2, file3, file4, & dir
+#trash directory now contains file6
+#dir directory now contains file5
+
+Run with two arguments (1 file, of which is a duplicate, and 1 directory):
+
+#dir directory now contains file5, file6 
+BASH$ ./unsfrm file6 dir
+File already exists, enter y to overwrite, or other to skip
+$ vjnasdv
+BASH$
+#current directory now contains file1, file2, file3, file4, & dir
+#trash directory now contains file6
+#dir directory now contains file5
+
+Run with two arguments (1 file, of which is a duplicate, and 1 directory):
+
+BASH$ ./unsfrm file6 dir
+File already exists, enter y to overwrite, or other to skip
+$ y
+BASH$
+#current directory now contains file1, file2, file3, file4, & dir
+#trash directory is empty
+#dir directory now contains file5, file6
+
+emptytrash:
+
+#trash directory now contains file4, file6, & dir
+BASH$ ./emptytrash
+BASH$
+#trash directory is now empty
+

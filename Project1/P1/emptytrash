@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#Empties all contents of trash, including directories
+rm -fr $HOME/.trash/*

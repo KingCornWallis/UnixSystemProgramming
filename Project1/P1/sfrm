@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Check for number of arguments; 0 prints a description, 1 commences program
+if [ $# -lt 1 ]; then 
+        echo "sfrm is a script that safely removes files to a trash directory"
+else
+	# While the current command line argument is not empty
+        while [ "$1" != "" ]; do
+		# Checks if file is regular/exists; shifts if false
+                if [ -f $1 ]; then
+			# Checks if trash directory doesn't exists; makes it if true
+                        if [ ! -d $HOME/.trash ]; then
+                                mkdir HOME/.trash
+                        fi
+                        # Ensures existing files in trash are not overwritten
+			# Requires users to enter unique name before continuing
+                        file="$1"
+                        while [ -f $HOME/.trash/"$file" ]; do
+                                echo "Cannot move $1; $1 already exists in $HOME/.trash"
+                                echo "Enter a new name to store under:"
+                                read file
+                        done
+			# Renames file based on user input
+			mv $1 $file
+			# Moves file to trash
+                        mv $file $HOME/.trash
+                        shift
+                else
+                        echo "$1 is not a regular file (or does not exist) and has been ignored"
+                        shift
+                fi
+        done
+fi
+
+exit 0
