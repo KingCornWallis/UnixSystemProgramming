@@ -5,4 +5,6 @@ as the GDBM library.
 
 I have chosen Sudoku.
 
+There is a problem with the generator currently, and I am working to fix it.
+
 This project is implemented through C++ with some C conventions.
